@@ -1,27 +1,27 @@
-Region Category,Displacement Category,Application Category,Emissions Category,Useful Life
-NA_Eur,5 to 8,Automotive,"EPA 13-18, EURO IV",22
-Afr_In_CSA_Ru,Up to 5,Automotive,"TIER 4 INTERIM, EURO III",15
-NA_Eur,5 to 8,Automotive,"EPA 13-18, EURO IV",22
-Afr_In_CSA_Ru,5 to 8,Automotive,"TIER 4 INTERIM, EURO III",15
-Afr_In_CSA_Ru,5 to 8,Automotive,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",10
-NA_Eur,8 to 10,Automotive,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",17
-Afr_In_CSA_Ru,Up to 5,Automotive,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",7
-NA_Eur,8 to 10,Automotive,"EPA 10, EURO V",17
-NA_Eur,8 to 10,Automotive,"EPA 13-18, EURO IV",17
-NA_Eur,10 to 15,Automotive,"EPA 10, EURO V",25
-NA_Eur,10 to 15,Automotive,"TIER 1&2, EURO I&II, EPA 98-04",25
-NA_Eur,5 to 8,Automotive,"TIER 1&2, EURO I&II, EPA 98-04",22
-NA_Eur,10 to 15,Automotive,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",25
-NA_Eur,5 to 8,Automotive,"EPA 10, EURO V",22
-NA_Eur,10 to 15,Automotive,"EPA 13-18, EURO IV",25
-Mex_ME_APAC,10 to 15,Automotive,"TIER 1&2, EURO I&II, EPA 98-04",30
-Mex_ME_APAC,10 to 15,Automotive,"EPA 13-18, EURO IV",20
-NA_Eur,5 to 8,Automotive,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",22
-NA_Eur,5 to 8,Automotive,"TIER 1&2, EURO I&II, EPA 98-04",22
-NA_Eur,5 to 8,Bus,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",22
-NA_Eur,5 to 8,Bus,"EPA 13-18, EURO IV",22
-NA_Eur,8 to 10,Bus,"EPA 13-18, EURO IV",22
-NA_Eur,8 to 10,Bus,"EPA 10, EURO V",22
-NA_Eur,8 to 10,Bus,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",22
-NA_Eur,5 to 8,Bus,"TIER 1&2, EURO I&II, EPA 98-04",22
-NA_Eur,8 to 10,Bus,"TIER 1&2, EURO I&II, EPA 98-04",22
+Region Category,Displacement Category,Application Category,Emissions Category,Useful Life,Lifetime Entitlement
+NA_Eur,5 to 8,Automotive,"EPA 13-18, EURO IV",22,18164
+Afr_In_CSA_Ru,Up to 5,Automotive,"TIER 4 INTERIM, EURO III",15,4833
+NA_Eur,5 to 8,Automotive,"EPA 13-18, EURO IV",22,18000
+Afr_In_CSA_Ru,5 to 8,Automotive,"TIER 4 INTERIM, EURO III",15,9067
+Afr_In_CSA_Ru,5 to 8,Automotive,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",10,3210
+NA_Eur,8 to 10,Automotive,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",17,16606
+Afr_In_CSA_Ru,Up to 5,Automotive,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",7,489
+NA_Eur,8 to 10,Automotive,"EPA 10, EURO V",17,22842
+NA_Eur,8 to 10,Automotive,"EPA 13-18, EURO IV",17,21665
+NA_Eur,10 to 15,Automotive,"EPA 10, EURO V",25,31849
+NA_Eur,10 to 15,Automotive,"TIER 1&2, EURO I&II, EPA 98-04",25,15620
+NA_Eur,5 to 8,Automotive,"TIER 1&2, EURO I&II, EPA 98-04",22,7903
+NA_Eur,10 to 15,Automotive,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",25,21176
+NA_Eur,5 to 8,Automotive,"EPA 10, EURO V",22,18000
+NA_Eur,10 to 15,Automotive,"EPA 13-18, EURO IV",25,29383
+Mex_ME_APAC,10 to 15,Automotive,"TIER 1&2, EURO I&II, EPA 98-04",30,36491
+Mex_ME_APAC,10 to 15,Automotive,"EPA 13-18, EURO IV",20,39652
+NA_Eur,5 to 8,Automotive,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",22,12040
+NA_Eur,5 to 8,Automotive,"TIER 1&2, EURO I&II, EPA 98-04",22,7255
+NA_Eur,5 to 8,Bus,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",22,14978
+NA_Eur,5 to 8,Bus,"EPA 13-18, EURO IV",22,25509
+NA_Eur,8 to 10,Bus,"EPA 13-18, EURO IV",22,42353
+NA_Eur,8 to 10,Bus,"EPA 10, EURO V",22,42353
+NA_Eur,8 to 10,Bus,"EPA 07, TIER 4 FINAL, EURO IV, STAGE V",22,32800
+NA_Eur,5 to 8,Bus,"TIER 1&2, EURO I&II, EPA 98-04",22,9462
+NA_Eur,8 to 10,Bus,"TIER 1&2, EURO I&II, EPA 98-04",22,19867

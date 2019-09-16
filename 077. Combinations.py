@@ -18,3 +18,22 @@ class Solution(object):
             for n in self.combine_(arr[i+1:], k-1, length):
                 res.append([item] + n)
         return res
+
+
+
+# Sep 15, 2019
+# DFS method
+class Solution:
+    def combine(self, n: int, k: int) -> List[List[int]]:
+        nums = [i for i in range(1, n+1)]
+        res = []
+        self.dfs(k, nums, [], res)
+        return res
+    
+    def dfs(self, k, nums, arr, res):
+        if len(arr) < k:
+            for i, n in enumerate(nums):
+                self.dfs(k, nums[(i+1):], arr+[n], res)
+        else:
+            res.append(arr)
+        

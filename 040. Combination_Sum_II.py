@@ -29,3 +29,26 @@ class Solution(object):
         candidates.sort()
         dfs(candidates, target, [])
         return result
+
+
+# Sep 15, 2019
+# DFS Method
+class Solution:
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+        candidates.sort()
+        res = []
+        self.dfs(candidates, target, [], res)
+        return res
+    
+    def dfs(self, nums, target, arr, res):
+        if sum(arr) < target:
+            for i, n in enumerate(nums):
+                j = i-1
+                if j >=0 and nums[j] == nums[i]:
+                    continue
+                else:
+                    self.dfs(nums[i+1:], target, arr+[n], res)
+        elif sum(arr) == target:
+            res.append(arr)
+        else:
+            return

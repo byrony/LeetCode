@@ -6,7 +6,25 @@ Created on Tue Mar  7 23:43:28 2017
 @author: caoxiang
 """
 
-# method 1: bfs
+
+# Sep 15, 2019
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        res = [[]]
+        self.dfs(nums, [], res)
+        return res
+    
+    def dfs(self, nums, arr, res):
+        if len(nums) > 0:
+            for i, n in enumerate(nums):
+                res.append(arr+[n])
+                # print(arr+[n])
+                self.dfs(nums[(i+1):], arr+[n], res) 
+        else:
+            return
+
+
+# method 1: dfs
 class Solution(object):
     def subsets(self, nums):
         """

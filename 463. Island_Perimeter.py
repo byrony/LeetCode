@@ -54,3 +54,30 @@ class Solution:
         self.dfs(grid, i+1, j, m, n, idx)
         self.dfs(grid, i, j+1, m, n, idx)
         self.dfs(grid, i, j-1, m, n, idx)
+
+
+
+class Solution:
+    def islandPerimeter(self, grid):
+        m = len(grid)
+        n = len(grid[0])
+        
+        if not grid:
+            return 0
+        
+        peri_tot = 0
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == 1:
+                    peri_tot += self.peri_adjacent(grid, i, j, m, n)
+        return peri_tot
+                    
+    def peri_adjacent(self, grid, i, j, m, n):
+        adjacent = [(i-1, j), (i+1, j), (i, j-1), (i, j+1)]
+        
+        peri = 0
+        for x, y in adjacent:
+            if x<0 or x>m-1 or y<0 or y>n-1 or grid[x][y]==0:
+                peri += 1
+            print(i, j, peri)
+        return peri

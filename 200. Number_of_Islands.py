@@ -1,4 +1,4 @@
-# recursive dfs
+# ieterative dfs
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         if not grid:
@@ -33,7 +33,7 @@ class Solution:
                     land.append((i-1, j))
             
         
-# iterative dfs
+# recursive dfs
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         if not grid:

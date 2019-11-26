@@ -28,3 +28,22 @@ class Solution(object):
             self.postorderTraversal_(root.left, arr)
             self.postorderTraversal_(root.right, arr)
             arr.append(root.val)
+
+
+# Nov 25 2019
+# Iterative
+class Solution:
+    def postorderTraversal(self, root: TreeNode) -> List[int]:
+        if not root:
+            return []
+        
+        arr = []
+        stack = [root]
+        while stack:
+            node = stack.pop()
+            arr.append(node.val)
+            if node.left:
+                stack.append(node.left)
+            if node.right:
+                stack.append(node.right)
+        return arr[::-1]

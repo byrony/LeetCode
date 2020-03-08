@@ -35,3 +35,21 @@ class Solution(object):
         result = [] 
         dfs(candidates, target, [])
         return result
+
+
+# Mar 7, 2020
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        res = []
+        self.dfs(candidates, res, [], target)
+        return res
+    
+    def dfs(self, candidates, res, path, target):
+        if target == 0:
+            res.append(path)
+            return
+        elif target < 0:
+            return
+        else:
+            for i, c in enumerate(candidates):
+                self.dfs(candidates[i:], res, path+[c], target-c)

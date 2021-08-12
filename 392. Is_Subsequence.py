@@ -84,3 +84,21 @@ class Solution:
             else:
                 l = mid + 1
         return l, r
+
+
+# Apr 12, 2020
+# solved with python string find method
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        i, j = 0, 0
+        for i in range(len(s)):
+            idx = t[j:].find(s[i]) 
+            # idx the index of first appearance, -1 if not found
+            if idx == -1: 
+                return False
+            else:
+                j += idx+1
+        return True
+                
+                    
+

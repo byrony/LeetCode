@@ -53,3 +53,29 @@ class Solution:
         else:
             for i, c in enumerate(candidates):
                 self.dfs(candidates[i:], res, path+[c], target-c)
+
+
+# Aug 14, 2021
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        candidates = sorted(candidates)
+        res = []
+        self.dfs(candidates, target, [], res)
+        return res
+    
+    def dfs(self, candidates, target, path, res):
+        if target == 0:
+            # Note need append the elements of path rather than the reference, e.g. path[:], path.copy()
+            # since path was keeping modified
+            res.append(path[:])
+            return
+        else:
+            for i, c in enumerate(candidates):
+                if c > target:
+                    return
+                # only check [i:] to avoid duplicate results
+                path.append(c)
+                # print(path, '----append----')
+                self.dfs(candidates[i:], target-c, path, res)
+                path.pop()
+                # print(path, '----pop----')

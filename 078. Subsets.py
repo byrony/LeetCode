@@ -6,6 +6,25 @@ Created on Tue Mar  7 23:43:28 2017
 @author: caoxiang
 """
 
+# Aug 14, 2021. Backtrace
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        res = []
+        self.dfs(nums, 0, [], res)
+        return res
+    
+    def dfs(self, nums, s, curr, res):
+        if s <= len(nums):
+            res.append(curr[:])
+        else:
+            return
+        
+        for i in range(s, len(nums)):
+            curr.append(nums[i])
+            # print(curr, '----append----')
+            self.dfs(nums, i+1, curr, res)
+            curr.pop()
+            # print(curr, '----pop----')
 
 # Sep 15, 2019
 class Solution:
@@ -84,4 +103,5 @@ Draw plot to understand it clearly. It's correct.
 1 3 [3]
 [[], [1], [1, 2], [1, 2, 3], [1, 3], [2], [2, 3], [3]]
 """
+
 

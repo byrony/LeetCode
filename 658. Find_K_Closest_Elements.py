@@ -1,3 +1,36 @@
+# Sep 4 2021
+class Solution:
+    def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
+        from bisect import bisect_left
+        
+        ins = bisect_left(arr, x)
+        if ins == 0:
+            return arr[:k]
+        elif ins == len(arr):
+            return arr[-k:]
+
+        l, r = ins-1, ins
+        left, right = [], []
+        cnt = k
+        while cnt > 0 and l >= 0 and r <= len(arr)-1:
+            # if equal, prefer to add left element
+            if abs(arr[l] - x) <= abs(arr[r] - x):
+                left = [arr[l]] + left
+                l -= 1
+            else:
+                right.append(arr[r])
+                r += 1
+            cnt -= 1
+            # print(left, right, l, r, '===', cnt)
+        
+        if cnt > 0:
+            if r >= len(arr):
+                left = arr[l+1-cnt:l+1] + left
+            elif l <= 0:
+                right = right + arr[r:r+cnt]
+        return left + right
+
+
 # Dec 24 2019
 
 class Solution:

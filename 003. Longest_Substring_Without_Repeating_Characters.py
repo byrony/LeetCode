@@ -1,3 +1,39 @@
+# Sep 11 2021
+# Be careful about the case 'abba'. Deal with it using `i = max(i, dic[s[j]] + 1)`
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        if len(s) == 0:
+            return 0
+        elif len(s) == 1:
+            return 1
+        
+        res = []
+        i, j = 0, 1
+        dic = dict()
+        
+        while i <= len(s)-1 and j <= len(s)-1:
+            if s[i] not in dic.keys():
+                dic[s[i]] = i
+            while j <= len(s)-1:
+                # print(i, j)
+                if s[j] not in dic.keys():
+                    dic[s[j]] = j
+                    j += 1
+                else:
+                    res.append((i, j-1))
+                    i = max(i, dic[s[j]] + 1)
+                    dic[s[j]] = j
+                    j += 1
+                    break
+            if j == len(s):
+                res.append((i, j-1))
+                
+        # print(res)
+        long_sub_idx = sorted(res, key=lambda x: x[1]-x[0], reverse=True)
+        return long_sub_idx[0][1] - long_sub_idx[0][0] + 1
+
+
+
 # Dec 22 2019
 
 class Solution:
